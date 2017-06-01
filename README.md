@@ -1,5 +1,5 @@
 # HighFrontierSOL
-High Frontier - SOL Sunspot Cycle tourn tracker mobile app
+High Frontier - SOL Sunspot Cycle turn tracker mobile app
 
 v0.1.2
 
@@ -10,5 +10,5 @@ High Frontier (3rd edition) is a space exploration game by Phil Eklund. The play
 Board Game Geek: https://boardgamegeek.com/boardgame/172737/high-frontier-3rd-edition
 
 Idea:
-Our idea is to help players with tourn control system and basic game info.
+Our idea is to help players with turn control system and basic game info.
 
