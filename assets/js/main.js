@@ -1,14 +1,23 @@
 function initialize() {
 
     $("#token").draggable({ containment: "#sunBox", scroll: false,
+        create: function(event, ui) {
+            var top = $('#token').css({top: 52, position:'absolute'});
+            var left = $('#token').css({left: 203, position:'absolute'});
+        },
         stop: function(event, ui) {
-          var top = $('#token').css('top');
-          var left = $('#token').css('left');
-          console.log('dragged to top=' + top + ' and left='+ left + '');
+            var top = $('#token').css('top');
+            var left = $('#token').css('left');
+            console.log('dragged to top=' + top + ' and left='+ left + '');
+            
+            
+            
+            //var axisx = document.getElementById("AxisX");
+            //console.log(axisx.textContent);
         }
     });
-
-};
+    
+}
 
 $("#sunButton").click(function() {
     update($("#TurnNumber"));
