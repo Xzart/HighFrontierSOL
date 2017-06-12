@@ -1,7 +1,7 @@
 # HighFrontierSOL
 High Frontier - SOL Sunspot Cycle turn tracker mobile app
 
-v0.03.2
+v0.04.1
 
 Mobile HTML5 + CSS + JQuery application for High Frontier 3ed board game.
 
@@ -18,3 +18,11 @@ Board Game Geek: https://boardgamegeek.com/boardgame/172737/high-frontier-3rd-ed
 1. <del>The token will be placed on the SOL start position.</del>
 2. After click Next turn - token move to the next turn position.
 3. ...
+
+# Update change list
+
+v0.04.1
+1. Token moves to the first position.
+
+v0.03.2
+1. New content - update soon.

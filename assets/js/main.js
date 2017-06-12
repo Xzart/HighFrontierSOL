@@ -9,18 +9,19 @@ function initialize() {
             var top = $('#token').css('top');
             var left = $('#token').css('left');
             console.log('dragged to top=' + top + ' and left='+ left + '');
-            
-            
-            
-            //var axisx = document.getElementById("AxisX");
-            //console.log(axisx.textContent);
         }
     });
     
 }
 
+// Next turn button //
+
 $("#sunButton").click(function() {
     update($("#TurnNumber"));
+    var table = nextPosition();
+    $('#token').css({top: table[1][0], position:'absolute'});
+    $('#token').css({left: table[1][1], position:'absolute'});
+    console.log(table[1][0] + ' ' + table[1][1])
 } );
 
 function update(j) {
@@ -28,6 +29,15 @@ function update(j) {
     j.text(n+1);
 }
 
+// Next position array //
+
+function nextPosition () {
+    var posTab = [];
+    posTab[0] = ['52px','203px'];
+    posTab[1] = ['89px','269px'];
+    console.log('Position X=' + posTab[0][0] + ' Position Y=' + posTab[0][1]);
+    return posTab;
+}
 /* notatki
 - zmiana pozycji tokena: https://stackoverflow.com/questions/12744928/in-jquery-how-can-i-set-top-left-properties-of-an-element-with-position-values
   $('#token').css({top: 200, left: 200, position:'absolute'});
